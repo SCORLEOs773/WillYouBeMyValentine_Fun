@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>I love you 💓</title>
+</head>
+
+<style>
+    p {
+        text-align: center;
+        font-size: 32px;
+        font-family: Candara, Oswald;
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 25%;
+    }
+    
+    #btn1 {
+        position: fixed;
+        top: 70%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #btn2 {
+        position: absolute;
+        left: 39%;
+        top: 68%;
+    }
+    
+    #btn1,
+    #btn2 {
+        padding: 10px 15px;
+        margin: 10px;
+        background-color: crimson;
+        color: aliceblue;
+        font-weight: bolder;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+    
+    body {
+        background-image: url("https://media.tenor.com/RsMhonI753YAAAAM/hearts-love.gif");
+    }
+</style>
+
+<body>
+
+    <p style="background-color: bisque; opacity:0.8">Will you be my Valentine? 🤗</p>
+
+
+    <img src="https://media.tenor.com/U7IeqUv8yeMAAAAj/i-love-you.gif">
+
+
+    <button id="btn1">YES YES!</button>
+    <button id="btn2">NO</button>
+
+</body>
+
+
+
+<script>
+    const button2 = document.getElementById('btn2');
+    let left = 40;
+    button2.addEventListener('mouseover', function() {
+        if (left == 40) {
+            left = 44;
+        } else if (left == 42) {
+            left = 35;
+        } else if (left == 65) {
+            left = 42;
+        } else if (left == 44) {
+            left = 65;
+        } else {
+            left = 40;
+        }
+        this.style.left = left + '%';
+    });
+    document.getElementById('btn1').addEventListener('click', function() {
+        alert('YAYYY! Thankyou Love you! 😘💞');
+    });
+</script>
+
+
+</html>
